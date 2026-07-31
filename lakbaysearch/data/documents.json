@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "Boracay",
+    "heading": "Boracay",
+    "url": "https://en.wikipedia.org/wiki/Boracay",
+    "content": "Boracay is a resort island in the Western Visayas region of the Philippines, located 0.8 kilometers from the northwest tip of Panay Island. It is known for its white sand beaches, crystal clear waters, and vibrant nightlife. White Beach is the most famous beach on the island, stretching for four kilometers along the west coast. The island was named Best Island in the World by Travel + Leisure magazine in 2012. Boracay attracts over two million tourists annually and offers a wide range of water sports including snorkeling, diving, kiteboarding, and parasailing. The island underwent a six-month rehabilitation in 2018 to address environmental concerns and improve tourism infrastructure.",
+    "source": "en.wikipedia.org",
+    "category": "Beaches"
+  },
+  {
+    "id": 2,
+    "title": "Palawan",
+    "heading": "Palawan",
+    "url": "https://en.wikipedia.org/wiki/Palawan",
+    "content": "Palawan is the largest province in the Philippines in terms of land area. It is known for its stunning beaches, limestone cliffs, and rich biodiversity. The province includes the famous Underground River in Puerto Princesa, a UNESCO World Heritage Site and one of the New Seven Wonders of Nature. Palawan is also home to El Nido, known for its lagoons and limestone karst formations, and Coron, famous for its Japanese shipwreck diving sites. The province has been repeatedly named the Best Island in the World by various travel publications. Palawan's flora and fauna include the Philippine mouse-deer and the Calamian deer.",
+    "source": "en.wikipedia.org",
+    "category": "Beaches"
+  },
+  {
+    "id": 3,
+    "title": "Cebu",
+    "heading": "Cebu",
+    "url": "https://en.wikipedia.org/wiki/Cebu",
+    "content": "Cebu is a province of the Philippines located in the Central Visayas region. It is one of the most developed provinces in the country, with Cebu City as its capital and main economic center. Cebu is known for its historical landmarks including Magellan's Cross, planted by Ferdinand Magellan in 1521, and the Santo Niño Basilica, the oldest Roman Catholic church in the Philippines. Fort San Pedro is the oldest fort in the country. The province also offers beautiful beaches, diving spots in Moalboal, and whale shark watching in Oslob. Cebu is also famous for its lechon, considered one of the best roasted pigs in the world.",
+    "source": "en.wikipedia.org",
+    "category": "Cities"
+  },
+  {
+    "id": 4,
+    "title": "Mount Apo",
+    "heading": "Mount Apo",
+    "url": "https://en.wikipedia.org/wiki/Mount_Apo",
+    "content": "Mount Apo is the highest mountain in the Philippines, standing at 2,954 meters above sea level. It is located in the Davao Region on the island of Mindanao. The mountain is a protected area and a popular hiking destination. Mount Apo is a stratovolcano with a peak that offers panoramic views of Mindanao. The mountain is home to the Philippine eagle, the national bird of the Philippines, which is also one of the largest eagles in the world. The climb to the summit typically takes 3-4 days and requires permits and guides. The mountain's name means 'grandfather' in the indigenous Manobo language.",
+    "source": "en.wikipedia.org",
+    "category": "Mountains"
+  },
+  {
+    "id": 5,
+    "title": "Chocolate Hills",
+    "heading": "Chocolate Hills",
+    "url": "https://en.wikipedia.org/wiki/Chocolate_Hills",
+    "content": "The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills spread over an area of more than 50 square kilometers. The hills are covered in green grass that turns brown during the dry season, giving them the appearance of chocolate kisses. The Chocolate Hills are a National Geological Monument and one of the most popular tourist attractions in the Philippines. The formation is composed of limestone and is believed to have been formed by the uplift of coral deposits and the action of rainwater and erosion over thousands of years. The hills range in height from 30 to 120 meters.",
+    "source": "en.wikipedia.org",
+    "category": "Nature"
+  },
+  {
+    "id": 6,
+    "title": "Intramuros",
+    "heading": "Intramuros",
+    "url": "https://en.wikipedia.org/wiki/Intramuros",
+    "content": "Intramuros is the historic walled city within the modern city of Manila. Built by the Spanish colonial government in the 16th century, it served as the seat of government, religion, and education during the Spanish colonial period. The walls and fortifications were built to protect the city from foreign invasions. Intramuros contains several important historical landmarks including Fort Santiago, San Agustin Church (a UNESCO World Heritage Site), and Manila Cathedral. The area was heavily damaged during World War II but has been partially restored. Today, Intramuros is a popular tourist destination offering horse-drawn carriage rides, museums, and restaurants.",
+    "source": "en.wikipedia.org",
+    "category": "Historical Sites"
+  },
+  {
+    "id": 7,
+    "title": "Sinulog",
+    "heading": "Sinulog Festival",
+    "url": "https://en.wikipedia.org/wiki/Sinulog",
+    "content": "Sinulog is an annual religious and cultural festival held on the third Sunday of January in Cebu City. The festival honors the Santo Niño de Cebu, a statue of the Child Jesus. The name Sinulog comes from the Cebuano word 'sulog' meaning 'like water current movement,' describing the traditional dance steps. The festival features a grand parade with participants in colorful costumes dancing to the beat of drums. Millions of devotees and tourists attend the Sinulog festival each year, making it one of the largest festivals in the Philippines. The Sinulog festival combines indigenous ritual traditions with Catholic religious practices.",
+    "source": "en.wikipedia.org",
+    "category": "Cultural Attractions"
+  },
+  {
+    "id": 8,
+    "title": "Banaue Rice Terraces",
+    "heading": "Banaue Rice Terraces",
+    "url": "https://en.wikipedia.org/wiki/Banaue_Rice_Terraces",
+    "content": "The Banaue Rice Terraces are terraces that were carved into the mountains of Ifugao in the Philippines by the ancestors of the indigenous people. The terraces are approximately 2,000 years old and are often called the 'Eighth Wonder of the World.' They are located about 1,500 meters above sea level and cover an area of 10,360 square kilometers. The terraces were built using minimal tools and are fed by an ancient irrigation system from the rainforests above. The Banaue Rice Terraces are a UNESCO World Heritage Site and a major tourist attraction in the Philippines. The Ifugao people continue to cultivate rice on the terraces today.",
+    "source": "en.wikipedia.org",
+    "category": "Historical Sites"
+  },
+  {
+    "id": 9,
+    "title": "Department of Tourism - Philippines",
+    "heading": "Welcome to the Philippines",
+    "url": "https://beta.tourism.gov.ph/",
+    "content": "The Department of Tourism (DOT) is the executive department of the Philippine government responsible for the regulation of the Philippine tourism industry and the promotion of the Philippines as a tourist destination. The Philippines is an archipelago of more than 7,600 islands with diverse attractions including pristine beaches, world-class diving spots, majestic mountains, and rich cultural heritage. The DOT promotes sustainable tourism development and works to enhance the competitiveness of Philippine tourism destinations. The country offers experiences ranging from island hopping in Palawan to heritage tours in Vigan and food trips in Manila.",
+    "source": "tourism.gov.ph",
+    "category": "Other"
+  },
+  {
+    "id": 10,
+    "title": "Beaches and Diving - DOT Philippines",
+    "heading": "Beaches and Diving",
+    "url": "https://beta.tourism.gov.ph/tourism-products/beaches-and-diving/",
+    "content": "The Philippines is known for having some of the most beautiful beaches and diving spots in the world. With over 7,600 islands, the country offers countless beach destinations ranging from the famous White Beach in Boracay to the hidden coves of Palawan. The Philippines is also a world-class diving destination with sites like Tubbataha Reef, Apo Reef, and the shipwrecks of Coron Bay. The warm waters of the Philippines are home to an incredible diversity of marine life including whale sharks, sea turtles, and colorful coral reefs. Many beaches offer water sports activities such as snorkeling, kayaking, and island hopping.",
+    "source": "tourism.gov.ph",
+    "category": "Beaches"
+  },
+  {
+    "id": 11,
+    "title": "Siargao",
+    "heading": "Siargao",
+    "url": "https://en.wikipedia.org/wiki/Siargao",
+    "content": "Siargao is a tear-drop shaped island in the Philippines located in the province of Surigao del Norte. It is known as the surfing capital of the Philippines, with Cloud 9 being one of the most famous surfing waves in the world. The island offers beautiful beaches, coconut palm-fringed landscapes, and crystal clear turquoise waters. Siargao has become a popular destination for both surfers and travelers seeking a tropical paradise. The island also features the Magpupungko Rock Pools and the Sugba Lagoon. Siargao was named the Best Island in Asia by Condé Nast Traveler in 2019.",
+    "source": "en.wikipedia.org",
+    "category": "Beaches"
+  },
+  {
+    "id": 12,
+    "title": "Baguio",
+    "heading": "Baguio",
+    "url": "https://en.wikipedia.org/wiki/Baguio",
+    "content": "Baguio, officially known as Baguio City, is a highly urbanized city in the Cordillera Administrative Region of the Philippines. It is known as the 'Summer Capital of the Philippines' due to its cool climate. The city is located at an altitude of approximately 1,540 meters in the Cordillera Central mountains. Baguio is a popular tourist destination known for its pine trees, parks, and the Panagbenga Flower Festival. Major attractions include Burnham Park, Mines View Park, Camp John Hay, and the Baguio Cathedral. The city was established by the American colonial government in 1900 as a hill station.",
+    "source": "en.wikipedia.org",
+    "category": "Cities"
+  },
+  {
+    "id": 13,
+    "title": "Mount Mayon",
+    "heading": "Mount Mayon",
+    "url": "https://en.wikipedia.org/wiki/Mayon_Volcano",
+    "content": "Mayon Volcano, also known as Mount Mayon, is an active stratovolcano in the province of Albay in the Bicol Region of the Philippines. It is renowned for its perfectly symmetrical cone shape, which is considered the most perfect volcanic cone in the world. The volcano rises to a height of 2,462 meters above sea level. Mayon is the most active volcano in the Philippines, having erupted over 50 times in the last 400 years. The most destructive eruption was in 1814 which buried the town of Cagsawa. Despite its dangers, Mayon is a major tourist attraction and a popular destination for hiking and photography.",
+    "source": "en.wikipedia.org",
+    "category": "Mountains"
+  },
+  {
+    "id": 14,
+    "title": "Tubbataha Reef",
+    "heading": "Tubbataha Reef",
+    "url": "https://en.wikipedia.org/wiki/Tubbataha_Reef",
+    "content": "Tubbataha Reef is a protected area and UNESCO World Heritage Site located in the Sulu Sea, approximately 150 kilometers southeast of Puerto Princesa City in Palawan. The reef is considered one of the best diving sites in the world. It consists of two coral atolls, the North and South Reefs, and the Jessie Beazley Reef. Tubbataha is home to an extraordinary diversity of marine life including over 600 species of fish, 360 species of coral, and numerous species of sharks, rays, sea turtles, and dolphins. The reef is accessible only by live-aboard dive boats during the diving season from March to June.",
+    "source": "en.wikipedia.org",
+    "category": "Beaches"
+  },
+  {
+    "id": 15,
+    "title": "Historic City of Vigan",
+    "heading": "Historic City of Vigan",
+    "url": "https://en.wikipedia.org/wiki/Historic_City_of_Vigan",
+    "content": "Vigan is a city in the province of Ilocos Sur in the Philippines. It is known for its well-preserved Spanish colonial architecture and is a UNESCO World Heritage Site. The city is famous for its cobblestone streets, horse-drawn carriages called kalesa, and historic buildings that blend Asian and European architectural styles. Calle Crisologo is the most famous street in Vigan, lined with ancestral houses that have been converted into museums, shops, and restaurants. Vigan is one of the few remaining Spanish colonial towns in the Philippines and is a popular tourist destination for history and culture enthusiasts.",
+    "source": "en.wikipedia.org",
+    "category": "Historical Sites"
+  },
+  {
+    "id": 16,
+    "title": "Philippine Cuisine",
+    "heading": "Philippine Cuisine",
+    "url": "https://en.wikipedia.org/wiki/Philippine_Cuisine",
+    "content": "Philippine cuisine is a rich and diverse culinary tradition that reflects the country's history and cultural influences. The cuisine has been influenced by Malay, Chinese, Spanish, and American cooking traditions. Popular dishes include adobo, a savory stew of meat marinated in vinegar and soy sauce; sinigang, a sour soup made with tamarind; lechon, a whole roasted pig; and lumpia, fresh or fried spring rolls. Filipino cuisine is known for its bold flavors combining sour, salty, sweet, and savory elements. The Philippines also has a variety of traditional desserts and snacks including halo-halo, a shaved ice dessert with mixed fruits and toppings.",
+    "source": "en.wikipedia.org",
+    "category": "Cultural Attractions"
+  },
+  {
+    "id": 17,
+    "title": "Davao City",
+    "heading": "Davao City",
+    "url": "https://en.wikipedia.org/wiki/Davao_City",
+    "content": "Davao City is a highly urbanized city on the island of Mindanao in the Philippines. It is the largest city in the Philippines by land area and is the economic and cultural center of the Davao Region. The city is known for its durian fruit, Mount Apo (the highest peak in the Philippines), and the Philippine eagle. Davao City is also the home of the Kadayawan Festival, a week-long celebration of the city's cultural heritage. The city is considered one of the safest in the Philippines and has a well-developed infrastructure. Davao City is a major gateway to tourist destinations in Mindanao.",
+    "source": "en.wikipedia.org",
+    "category": "Cities"
+  },
+  {
+    "id": 18,
+    "title": "Puerto Princesa Subterranean River National Park",
+    "heading": "Puerto Princesa Subterranean River National Park",
+    "url": "https://en.wikipedia.org/wiki/Puerto_Princesa_Subterranean_River_National_Park",
+    "content": "The Puerto Princesa Subterranean River National Park is a protected area in the Philippines located about 80 kilometers north of Puerto Princesa City in Palawan. The park features a spectacular limestone karst landscape and an underground river that flows directly into the sea. The underground river is one of the longest navigable underground rivers in the world, stretching over 8 kilometers. The park was declared a UNESCO World Heritage Site in 1999 and was voted as one of the New Seven Wonders of Nature in 2012. The cave system features impressive stalactites and stalagmites formations and is home to various species of bats and swiftlets.",
+    "source": "en.wikipedia.org",
+    "category": "Nature"
+  },
+  {
+    "id": 19,
+    "title": "Ati-Atihan Festival",
+    "heading": "Ati-Atihan Festival",
+    "url": "https://en.wikipedia.org/wiki/Ati-Atihan_festival",
+    "content": "The Ati-Atihan Festival is an annual religious and cultural festival held in Kalibo, Aklan in the Philippines. The festival honors the Santo Niño (Child Jesus) and is known as the 'Mother of Philippine Festivals.' Participants paint their faces and bodies with black soot and wear colorful tribal costumes, dancing to the beat of drums. The festival commemorates the arrival of Malay settlers in the Philippines and their peaceful interaction with the indigenous Ati people. The Ati-Atihan Festival is held every January and attracts thousands of local and international tourists. It is known for its lively street dancing and religious processions.",
+    "source": "en.wikipedia.org",
+    "category": "Cultural Attractions"
+  },
+  {
+    "id": 20,
+    "title": "Tagaytay",
+    "heading": "Tagaytay",
+    "url": "https://en.wikipedia.org/wiki/Tagaytay",
+    "content": "Tagaytay is a popular tourist destination in the province of Cavite, Philippines. It is known for its cool climate and scenic views of Taal Volcano and Taal Lake. The city is located on a ridge about 660 meters above sea level. Tagaytay offers various attractions including the Taal Volcano viewpoint, People's Park in the Sky, and the Sky Ranch amusement park. It is also known for its restaurants serving local cuisine, particularly bulalo (beef marrow stew) and fresh coffee from the nearby coffee farms. Tagaytay is a favorite weekend getaway for residents of Metro Manila due to its proximity and cooler temperatures.",
+    "source": "en.wikipedia.org",
+    "category": "Nature"
+  }
+]

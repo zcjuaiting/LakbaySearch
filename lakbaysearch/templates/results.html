@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}{{ query }} - LakbaySearch Results{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="row mb-4">
+        <div class="col-12">
+            <form action="{{ url_for('search_results') }}" method="GET" class="results-search-wrapper" id="search-form">
+                <div class="row g-2 align-items-center">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="search-input-group">
+                            <input
+                                type="text"
+                                class="search-input"
+                                name="q"
+                                id="search-input"
+                                value="{{ query }}"
+                                placeholder="Search Philippine Destinations..."
+                                aria-label="Search query"
+                                autocomplete="off"
+                                required
+                            >
+                            <button class="btn-clear" type="button" id="clear-button" title="Clear search">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                            <button class="btn-search" type="submit" id="search-button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <select name="category" class="filter-select w-100" id="category-filter">
+                            <option value="all" {% if category_filter == 'all' %}selected{% endif %}>All Categories</option>
+                            {% for cat in categories %}
+                            <option value="{{ cat }}" {% if category_filter == cat %}selected{% endif %}>{{ cat }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <select name="source" class="filter-select w-100" id="source-filter">
+                            <option value="all" {% if source_filter == 'all' %}selected{% endif %}>All Sources</option>
+                            {% for src in sources %}
+                            <option value="{{ src }}" {% if source_filter == src %}selected{% endif %}>{{ src }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
+                <div id="loading-indicator" class="text-center mt-2 d-none">
+                    <div class="spinner-border spinner-border-sm" role="status">
+                        <span class="visually-hidden">Searching...</span>
+                    </div>
+                    <span class="ms-2 text-secondary small">Searching...</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <div class="results-summary">
+                <h5 class="mb-1">
+                    Results for "<strong>{{ query }}</strong>"
+                </h5>
+                <small>
+                    {{ total_results }} result{% if total_results != 1 %}s{% endif %} found
+                    in {{ execution_time }} seconds
+                </small>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            {% if results %}
+                {% for result in results %}
+                <div class="result-card mb-3">
+                    <div class="d-flex justify-content-between align-items-start mb-1">
+                        <a href="{{ result.url }}" target="_blank" rel="noopener noreferrer" class="result-title">
+                            {{ result.title }}
+                        </a>
+                        <span class="similarity-badge ms-3">
+                            {{ result.similarity }}%
+                        </span>
+                    </div>
+
+                    <a href="{{ result.url }}" target="_blank" rel="noopener noreferrer" class="result-url">
+                        <i class="bi bi-link-45deg"></i> {{ result.url[:80] }}{% if result.url|length > 80 %}...{% endif %}
+                    </a>
+
+                    <div class="result-snippet">{{ result.snippet|safe }}</div>
+
+                    <div class="result-footer">
+                        <span class="category-badge">
+                            <i class="bi bi-tag"></i> {{ result.category }}
+                        </span>
+                        <span class="source-badge">
+                            <i class="bi bi-globe"></i> {{ result.source }}
+                        </span>
+                        <a href="{{ result.url }}" target="_blank" rel="noopener noreferrer" class="btn-visit">
+                            <i class="bi bi-box-arrow-up-right"></i> Visit Page
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="zero-results">
+                    <i class="bi bi-emoji-frown zero-icon"></i>
+                    <h4>No results found</h4>
+                    <p>We couldn't find any documents matching "<strong>{{ query }}</strong>".</p>
+                    <ul class="suggestions">
+                        <li><i class="bi bi-arrow-right"></i> Try different keywords</li>
+                        <li><i class="bi bi-arrow-right"></i> Use more general terms</li>
+                        <li><i class="bi bi-arrow-right"></i> Check your spelling</li>
+                        <li><i class="bi bi-arrow-right"></i> Try one of the example searches below</li>
+                    </ul>
+                    <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                        <a href="{{ url_for('search_results', q='Boracay') }}" class="example-pill">
+                            <i class="bi bi-umbrella-beach"></i> Boracay
+                        </a>
+                        <a href="{{ url_for('search_results', q='Palawan') }}" class="example-pill">
+                            <i class="bi bi-water"></i> Palawan
+                        </a>
+                        <a href="{{ url_for('search_results', q='Cebu') }}" class="example-pill">
+                            <i class="bi bi-building"></i> Cebu
+                        </a>
+                        <a href="{{ url_for('search_results', q='Manila') }}" class="example-pill">
+                            <i class="bi bi-geo-alt"></i> Manila
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

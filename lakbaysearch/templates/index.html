@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}LakbaySearch - Philippine Tourism Search Engine{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+
+                <h1 class="hero-title">LakbaySearch</h1>
+                <p class="hero-subtitle">
+                    Discover Philippine tourism destinations. Powered by TF-IDF and Cosine Similarity.
+                </p>
+
+                {% if error %}
+                <div class="alert alert-glass alert-dismissible fade show mb-4" role="alert">
+                    <i class="bi bi-exclamation-triangle me-2"></i> {{ error }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+                {% endif %}
+
+                <form action="{{ url_for('search_results') }}" method="GET" class="search-wrapper" id="search-form">
+                    <div class="search-input-group">
+                        <input
+                            type="text"
+                            class="search-input"
+                            name="q"
+                            id="search-input"
+                            placeholder="Search Philippine Destinations..."
+                            aria-label="Search query"
+                            autocomplete="off"
+                            required
+                        >
+                        <button class="btn-clear" type="button" id="clear-button" title="Clear search">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                        <button class="btn-search" type="submit" id="search-button">
+                            <i class="bi bi-search"></i> <span>Search</span>
+                        </button>
+                    </div>
+                    <div id="loading-indicator" class="text-center mt-3 d-none">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Searching...</span>
+                        </div>
+                        <span class="ms-2 text-secondary">Searching...</span>
+                    </div>
+                </form>
+
+                <div class="example-section mt-4">
+                    <p class="example-label"><i class="bi bi-lightbulb me-1"></i> Try these examples:</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-2">
+                        <span class="example-pill" data-query="Boracay">
+                            <i class="bi bi-umbrella-beach"></i> Boracay
+                        </span>
+                        <span class="example-pill" data-query="Palawan beaches">
+                            <i class="bi bi-water"></i> Palawan Beaches
+                        </span>
+                        <span class="example-pill" data-query="Historical places in Cebu">
+                            <i class="bi bi-building"></i> Historical Cebu
+                        </span>
+                        <span class="example-pill" data-query="Mountains in the Philippines">
+                            <i class="bi bi-mountain"></i> Mountains
+                        </span>
+                        <span class="example-pill" data-query="Nature attractions">
+                            <i class="bi bi-tree"></i> Nature
+                        </span>
+                        <span class="example-pill" data-query="Philippine festivals">
+                            <i class="bi bi-music-note-beamed"></i> Festivals
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row feature-section g-4">
+            <div class="col-md-4">
+                <div class="glass-card text-center h-100">
+                    <i class="bi bi-globe2 card-icon"></i>
+                    <h5 class="card-title">Curated Sources</h5>
+                    <p class="card-text">
+                        Searches only within DOT Philippines and Wikipedia pages about Philippine tourism.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card text-center h-100">
+                    <i class="bi bi-diagram-3 card-icon"></i>
+                    <h5 class="card-title">TF-IDF Ranking</h5>
+                    <p class="card-text">
+                        Uses Term Frequency-Inverse Document Frequency for relevance scoring.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="glass-card text-center h-100">
+                    <i class="bi bi-speedometer2 card-icon"></i>
+                    <h5 class="card-title">Cosine Similarity</h5>
+                    <p class="card-text">
+                        Measures document-query similarity using vector angle comparison.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

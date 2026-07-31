@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Search Analytics - LakbaySearch{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <div class="analytics-header">
+        <h2><i class="bi bi-bar-chart text-gold me-2"></i> Search Analytics</h2>
+        <p>Insights and statistics about search activity on LakbaySearch.</p>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-4">
+            <div class="stat-card gold">
+                <div class="stat-number">{{ total_searches }}</div>
+                <p class="stat-label">Total Searches</p>
+                <i class="bi bi-search stat-icon"></i>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-number">{{ zero_result_searches }}</div>
+                <p class="stat-label">Zero-Result Searches</p>
+                <i class="bi bi-emoji-frown stat-icon"></i>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card gold">
+                <div class="stat-number">{{ "%.4f"|format(avg_search_time) }}s</div>
+                <p class="stat-label">Average Search Time</p>
+                <i class="bi bi-speedometer2 stat-icon"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4 mb-4">
+        <div class="col-md-6">
+            <div class="glass-table-card h-100">
+                <div class="card-header">
+                    <i class="bi bi-search"></i> Most Searched Queries
+                </div>
+                <div class="card-body">
+                    {% if most_searched_queries %}
+                    <div class="table-responsive">
+                        <table class="table-dark-glass table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Query</th>
+                                    <th class="text-end">Searches</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in most_searched_queries %}
+                                <tr>
+                                    <td>{{ loop.index }}</td>
+                                    <td>
+                                        <a href="{{ url_for('search_results', q=item.query) }}">
+                                            {{ item.query }}
+                                        </a>
+                                    </td>
+                                    <td class="text-end">
+                                        <span class="badge-count">{{ item.count }}</span>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="p-4 text-center text-secondary">No searches recorded yet.</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="glass-table-card h-100">
+                <div class="card-header">
+                    <i class="bi bi-trophy"></i> Most Frequent Top Results
+                </div>
+                <div class="card-body">
+                    {% if most_frequent_top_results %}
+                    <div class="table-responsive">
+                        <table class="table-dark-glass table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Document</th>
+                                    <th class="text-end">Times as Top</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in most_frequent_top_results %}
+                                <tr>
+                                    <td>{{ loop.index }}</td>
+                                    <td>{{ item.top_result }}</td>
+                                    <td class="text-end">
+                                        <span class="badge-count">{{ item.count }}</span>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="p-4 text-center text-secondary">No top results recorded yet.</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="glass-table-card">
+                <div class="card-header">
+                    <i class="bi bi-clock-history"></i> Recent Searches
+                </div>
+                <div class="card-body">
+                    {% if recent_searches %}
+                    <div class="table-responsive">
+                        <table class="table-dark-glass table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Query</th>
+                                    <th>Timestamp</th>
+                                    <th class="text-end">Results</th>
+                                    <th class="text-end">Time (s)</th>
+                                    <th>Top Result</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for search in recent_searches %}
+                                <tr>
+                                    <td>{{ loop.index }}</td>
+                                    <td>
+                                        <a href="{{ url_for('search_results', q=search.query) }}">
+                                            {{ search.query }}
+                                        </a>
+                                    </td>
+                                    <td class="small">{{ search.timestamp[:19] }}</td>
+                                    <td class="text-end">{{ search.num_results }}</td>
+                                    <td class="text-end">{{ "%.3f"|format(search.execution_time) }}</td>
+                                    <td class="small">{{ search.top_result or '—' }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <div class="p-4 text-center text-secondary">No searches recorded yet. Try searching for something!</div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
